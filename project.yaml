@@ -10,3 +10,10 @@ config:
 - plugins:
   - use: link
   - use: variables
+- presets:
+    _Snap:
+      Quest:
+        text: $(0)
+        icon: camera
+        icon-priority: 2
+        comment: SNAP for QUEST
