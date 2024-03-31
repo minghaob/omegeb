@@ -1,0 +1,11 @@
+title: 100% Route using Great Eagle Bow with WMC
+
+version: 1.0
+
+route:
+  use: ./main.yaml
+
+config:
+- use: Pistonight/celer-presets/botw/full.yaml
+- plugins:
+  - use: link
