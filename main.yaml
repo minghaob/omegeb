@@ -369,9 +369,13 @@
 
   - _Korok::N49:
       movements:
+          - push
           - to: [2714.13, 225.53, 2345.55]
-            away: true
+            icon: korok-acorn
+            color: white
+          - pop
       comment: Snipe with Falcon Bow
+      icon: null
 
   - .dir(N) + midair
   - _Tower::Hateno
@@ -607,9 +611,11 @@
 
   - WMC:
       movements:
+          - push
           - to: [-3637.5,-1792.75]
-            away: true
-      icon: bow
+            icon: bow
+            color: white
+          - pop
       split-type: UserDefined
       notes: Follow these .link([Detailed WMC Instructions]https://docs.google.com/presentation/d/1_x1TgluUOfYzo2eR-L68ObXuBVSsVbmMfghdUgv-Osg/edit?usp=sharing). Here is a .link([video guide for the WMC]https://youtu.be/0YZkmVyhfy4?t=9690).
 
@@ -693,14 +699,22 @@
   - _Korok::H50:
       comment: Look .dir(E) over river
       movements:
+          - push
           - to: [-2836.29, 501.88, -2423.84]
-            away: true
+            icon: korok-balloon
+            color: white
+          - pop
+      icon: null
 
   - _Korok::H47:
       comment: Look .dir(NW) at river head
       movements:
+          - push
           - to: [-2900.08, 498.65, -2508.79]
-            away: true
+            icon: korok-balloon
+            color: white
+          - pop
+      icon: null
 
   - .dir(N)
   - _Korok::H44:
@@ -1029,10 +1043,12 @@
       comment: Underneath rock slabs
 
   - Kill .enemy(Electric Lizalfos):
-      icon: calamity
       movements:
+          - push
           - to: [-2210.36, 357.48, 2203.96]
-            away: true
+            icon: calamity
+            color: white
+          - pop
   - _Material<Electric Darner>:
       coord: [-2220.85, 356.03, 2204.36]
       comment: Under rock
@@ -1225,10 +1241,14 @@
 
   - _Korok::N30:
       movements:
+          - push
           - to: [3229.03, 302.83, 1545.25]
-            away: true
+            icon: korok-matching
+            color: white
+          - pop
       comment: .rune(Stasis) and bomb arrow
       notes: Aim with bow to get apples to spawn
+      icon: null
 
   - _Korok::N22
 
@@ -1288,8 +1308,10 @@
 
   - _Snap::Quest<Lynel>:
       movements:
+          - push
           - to: [3261.15, 263.12, 1211.79]
-            away: true
+            color: white
+          - pop
 
   - .dir(<N)
   - _Memory::LanayruRoad:
@@ -1920,8 +1942,10 @@
   - _Korok::E02
   - _Snap::Quest<Eldin Great Skeleton>:
       movements:
+          - push
           - to: [1517.38, 209.04, -3703.94]
-            away: true
+            color: white
+          - pop
       notes: Look back and zoom in
       comment: SNAP
 
@@ -1979,8 +2003,10 @@
       notes: If the Blupees run away, you can take a backup picture later at Kakariko.
       movements:
         - to: [3350.10, 175.03, -3079.84]
+        - push
         - to: [3350.29, 164.95, -3062.80]
-          away: true
+          color: white
+        - pop
       comment: SNAP for quest
   - _Korok::A11
 
@@ -1994,8 +2020,12 @@
 
   - _Boss::Hinox::Black:
       movements:
+          - push
           - to: [3489.38, 179.10, -3335.79]
-            away: true
+            icon: hinox-black
+            color: white
+          - pop
+      icon: null
 
   - .dir(W>)
   - _Shrine::ZunaKai:
@@ -2247,10 +2277,12 @@
   - .dir(SW)
   - Deliver rock roast:
       notes: Unequip bow while carrying rock roast to avoid burning
-      icon: tots
       movements:
+          - push
           - to: [1823.00, 453.77, -1891.17]
-            away: true
+            color: white
+            icon: tots
+          - pop
 
   - _Shrine::KayraMah:
       comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=22150))
@@ -2461,10 +2493,12 @@
       icon: tots
 
   - .boss(Ganon):
-      icon: ganon
       movements:
+          - push
           - to: [-254.00, 191.01, -1061.37]
-            away: true
+            color: white
+            icon: ganon
+          - pop
       split-type: UserDefined
 
   - Continue:
@@ -2898,9 +2932,13 @@
   - _Boss::Hinox::Blue:
       movements:
           - to: [-1590.04, 210.73, -229.13]
+          - push
           - to: [-1534.88, 214.82, -171.59]
-            away: true
+            icon: hinox-blue
+            color: white
+          - pop
       notes: Shoot from R40
+      icon: null
 
   - _Korok::R40
 
@@ -3358,8 +3396,10 @@
       notes: This picture is lenient, so long as you zoom in and get the top of the sword in the picture.
       movements:
           - to: [-3899,888]
+          - push
           - to: [-3966.65, 766.14, 969.19]
-            away: true
+            color: white
+          - pop
 
   - .dir(.S)
   - _Boss::Talus::Rare:
@@ -3572,10 +3612,14 @@
       coord: [-2692,2737]
   - _Korok::W35:
       movements:
+        - push
         - to: [-2628.11, 168.49, 2751.21]
-          away: true
+          icon: korok-balloon
+          color: white
+        - pop
       comment: In arms of statue
       notes: Can use bomb arrow from orb
+      icon: null
 
   - Complete orb puzzle:
       icon: tots
@@ -4521,9 +4565,13 @@
       comment: Pinwheel
   - _Korok::F01:
       movements:
+          - push
           - to: [1381.90, 288.30, 2277.45]
-            away: true
+            icon: korok-acorn
+            color: white
+          - pop
       notes: .link([Visual cue]https://youtu.be/T5MXXtNCbX0?t=11835) if not raining
+      icon: null
 
   - .dir(SW)
   - _Korok::F04:
@@ -5392,8 +5440,12 @@
       comment: Bomb arrow .dir(NW)
       movements:
           - to: [-2340.70, 249.87, 1104.58]
+          - push
           - to: [-2393.37, 233.05, 1047.34]
-            away: true
+            icon: korok-acorn
+            color: white
+          - pop
+      icon: null
   - _Korok::R76
 
   - .dir(<W) + climb
@@ -5452,8 +5504,12 @@
   - _Korok::R34:
       comment: Below on windmill tower
       movements:
+          - push
           - to: [-3861.73, 101.01, -147.16]
-            away: true
+            icon: korok-acorn
+            color: white
+          - pop
+      icon: null
 
   - .dir(W>)
   - _Korok::R33
@@ -5707,17 +5763,29 @@
       comment: Look .dir(NW)
       movements:
           - to: [-2390,-398.5]
+          - push
           - to: [-2434.11, 319.87, -491.04]
-            away: true
+            icon: korok-balloon
+            color: white
+          - pop
+      icon: null
   - _Korok::R31:
       comment: Look .dir(S)
       movements:
+          - push
           - to: [-2370.11, 307.05, -345.31]
-            away: true
+            icon: korok-balloon
+            color: white
+          - pop
+      icon: null
   - _Boss::Hinox::Blue:
       movements:
+          - push
           - to: [-2370.05, 261.70, -419.59]
-            away: true
+            icon: hinox-blue
+            color: white
+          - pop
+      icon: null
 
   - .dir(S>)
   - _Korok::R30:
@@ -6049,8 +6117,12 @@
   - .dir(SE) run
   - _Korok::A36:
       movements:
+          - push
           - to: [4691.71, 136.71, -1777.33]
-            away: true
+            icon: korok-magnesis
+            color: white
+          - pop
+      icon: null
 
   - BLSS with orb
   - _Shrine::RitaagZumo:
@@ -6423,28 +6495,50 @@
       icon: tots
       movements: 
         - to: [2873.125,2066.5]
+        - push
         - to: [2859.85, 125.92, 2006.76]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2942.50, 127.50, 2014.27]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2966.63, 119.08, 2116.76]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2965.24, 117.79, 2117.93]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2929.67, 120.46, 2135.82]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2881.41, 123.69, 2142.18]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2855.64, 122.88, 2119.72]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2835.29, 122.50, 2101.18]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2811.71, 121.67, 2080.08]
-          away: true
+          color: white
+        - pop
+        - push
         - to: [2808.72, 122.06, 2048.74]
-          away: true  
+          color: white
+        - pop
+        - push
         - to: [2873.125,2066.5]
-          away: true
+          color: white
+        - pop
 
   - _Korok::N45
 
