@@ -1,4 +1,4 @@
-- Document/Route Info >> .link([\"What does '<N' mean?\"]https://docs.google.com/drawings/d/1X8y5J9c6hpzh9WuvBoBGg32BtFqok2rpB7Z9-mQqbJg/edit?usp=sharing), .link([NPC Info]https://docs.google.com/spreadsheets/d/1GS5DRdfnNnsczeg-N-iR-6Is9yeAdsRwT4CyDZbdq5U/edit#gid=1594284283), .link([Simple Glitch Explanations]https://docs.google.com/document/d/14EUBX0M96nGINX3mS7cQceKKUHfIBgOrvFElaHIj-Z0/edit?usp=sharing)
+- Document/Route Info >> .link(["What does '<N' mean?"]https://docs.google.com/drawings/d/1X8y5J9c6hpzh9WuvBoBGg32BtFqok2rpB7Z9-mQqbJg/edit?usp=sharing), .link([NPC Info]https://docs.google.com/spreadsheets/d/1GS5DRdfnNnsczeg-N-iR-6Is9yeAdsRwT4CyDZbdq5U/edit#gid=1594284283), .link([Simple Glitch Explanations]https://docs.google.com/document/d/14EUBX0M96nGINX3mS7cQceKKUHfIBgOrvFElaHIj-Z0/edit?usp=sharing)
 - Resources >> .link([Object Map]https://objmap.zeldamods.org/#/map/z5,0,0), .link([Master Guide]https://docs.google.com/spreadsheets/d/1qLOC3ajm6a-vrXvlwAecbhW88iT8vtv9iSvP0jUcwzY/edit?usp=sharing), .link([Drop Table Calculator]https://restite.org/drops/), .link([Material Usage Spreadsheet]https://docs.google.com/spreadsheets/d/1SMovk9HxD9_wqcsnHYNq8xmsclU6olqzI3pqu3QZ4Ro/edit#gid=722444247), .link([Database of Shrine Strats]https://restite.org/as/)
 - Questions or Corrections? Join the .link([BOTW Speedrunning discord]https://discord.gg/94YzaMFZxC) and ask in the 100% channel!
 - Recommended options (bottom of screen) |Theme Granatus | Split Settings Split on Shrine, Tower, Other.
@@ -31,6 +31,7 @@
 
   - _Material<Eat Baked Apple>:
       notes: Knock it away from the old man to avoid dialog. Make sure to eat it immediately.
+      comment: null
 
   - _Equipment::Weapon<Torch and Axe>:
       notes: Sidehop down the hill while grabbing torch to avoid dialog
@@ -117,6 +118,7 @@
       notes: Keep at least 3
   - _Material<2 Endura Shroom>:
       notes: Save one to cook, can eat the other
+      comment: null
   - _Material<2 Razorshrooms>:
       comment: Scrap
       notes: Do not eat
@@ -142,17 +144,21 @@
   - _Material<1 Rushroom>:
       coord: [-2349.25, 355.64, 672.69]
       notes: Do not eat
+      comment: null
   - _Chest<Forest Dweller's Bow>:
       coord: [-2342.64, 348.37, 680.81]
   - _Material<1 Acorn>:
       coord: [-2338.68, 348.73, 678.83]
       notes: Do not eat.
+      comment: null
 
   - .dir(N>)
   - _Material<8 Hearty Durians>:
       coord: [-2196.75, 410.21, 443.15]
       notes: Eat 1 right away, cook 4 in castle, and use 3 for IST scrap. You can get 2 more to eat if you want extra healing.
-  - _Material<2+ Wood>
+      comment: null
+  - _Material<2+ Wood>:
+      comment: null
 
   - .dir(W)
   - _Shrine::MoggLatan:
@@ -256,11 +262,15 @@
       comment: Opal in chest (.link([vod]https://youtu.be/Aw14LJhXV-8&t=2288))
   - _Material<2 Nightshade>:
       coord: [1965.43, 269.69, 854.73]
-  - _Material<2 Fairy>
+      comment: null
+  - _Material<2 Fairy>:
+      comment: null
   - _Material<1 Endura Carrot>:
       coord: [1977.61, 268.81, 824.60]
+      comment: null
   - _Material<2 Silent Princess>:
       coord: [1995.75, 267.90, 842.24]
+      comment: null
 
   - _Npc::SheikaFemale<Impa>:
       comment: Talk twice
@@ -331,7 +341,9 @@
       notes: If less than 3 screws, upgrade sensor when you come back later
 
   - Run .dir(E)
-  - _Material<2 Apples>
+  - _Material<2 Apples>:
+      comment: null
+
 
   - .dir(E) down
   - _Korok::N48:
@@ -362,6 +374,8 @@
   - .dir(<W)
   - _Material<1 Hearty Bass>:
       coord: [3011.06, 229.73, 2538.95]
+      comment: null
+
 
   - .dir(W>)
   - _Korok::N50:
@@ -416,10 +430,13 @@
   - _Material<1 Farosh Scale>:
       coord: [1737.76, 340.06, 2944.73]
       notes: Set a campfire and make morning to spawn Farosh 3 times.
+      comment: null
   - _Material<1 Farosh Claw>:
       hide-icon-on-map: true
+      comment: null
   - _Material<1 Farosh Horn>:
       hide-icon-on-map: true
+      comment: null
 
   - .dir(<W)
   - _Tower::Faron
@@ -435,6 +452,7 @@
   - .dir(E>)
   - _Material<6 Bananas>:
       coord: [1481.29, 241.32, 3550.63]
+      comment: null
 
   - Drop .dir(W>)
   - _Korok::F40
@@ -604,7 +622,8 @@
       hide-icon-on-map: true
       icon: bow
 
-  - _Material<Cold Darner>
+  - _Material<Cold Darner>:
+      comment: null
   - _Chest::Special<Great Eagle Bow>:
       coord: [-3627.20, 323.57, -1830.81]
       notes: Chest gives autosave for WMC.
@@ -655,6 +674,7 @@
   - Swim W
   - _Material<Voltfin Trout>:
       coord: [-3012.75, 217.66, -2157.02]
+      comment: null
 
   - _Warp::TravelMedallion<-3331.95,-2297.17>:
       text: SAVE and close game
@@ -1728,6 +1748,7 @@
           - to: [1701.79, 430.53, -1932.14]
           - to: [1683.16, 430.31, -1948.15]
       notes: .link([Lizard route]https://twitter.com/bings_f/status/1441999069128261636)
+      comment: null
 
   - _Npc<Fireproof Lizard Guy>:
       coord: [1657.35, 430.17, -1960.60]
@@ -1908,6 +1929,7 @@
   - _Korok::K02
   - _Material<Collect Scale>:
       hide-icon-on-map: true
+      comment: null
   - Shoot Dinraal (Horn):
       icon: calamity
       hide-icon-on-map: true
@@ -1924,6 +1946,7 @@
   - _Material<Lynel Hoof>:
       hide-icon-on-map: true
       notes: 94% chance to get one, but if you don't, kill lynel near A07.
+      comment: null
   - _Equipment::Bow<Lynel Bow>:
       hide-icon-on-map: true
 
@@ -2360,6 +2383,7 @@
   - Drop .dir(E)
   - _Material<2 Hylian Shroom>:
       notes: For transmutation
+      comment: null
 
   - Activate .loc(Keo Ruug):
       icon: shrine
@@ -2375,6 +2399,7 @@
 
   - _Material<2 Bird Egg>:
       notes: In tree near Hestu, for transmutation.
+      comment: null
 
   - _Npc<Hestu>:
       icon: hestu
@@ -2426,6 +2451,7 @@
   - _Material<10 Restless Crickets>:
       notes: Spin attack grass to collect while walking to Oaki. If you're short you can buy some from Beedle near Rota Ooh.
       hide-icon-on-map: true
+      comment: null
   - _Material<5 Frogs>:
       comment: If missed any before
       hide-icon-on-map: true
