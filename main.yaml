@@ -105,7 +105,7 @@
   - .!!(Paraglider):
       icon: king
       coord: [-809.33, 263.58, 1964.35]
-      split-type: UserDefined
+      counter: .user-defined-split()
 
 - Material Gathering / IST:
   - BLSS .dir(W>) to Satori Mountain:
@@ -222,13 +222,13 @@
       coord: [-491.34, 126.08, -1009.82]
       notes: Use and throw away RGC
   - _Equipment::Shield<Hylian Shield>:
-      split-type: UserDefined
+      counter: .user-defined-split()
       coord: [-501.57, 126.08, -1011.58]
 
   - _Warp::TravelMedallion<-253.85, -600.23>:
       text: Exit Castle
       comment: Warp from map menu
-      split-type: None
+      counter: .user-defined-split()
 
   - .dir(S)
   - Kill Guardian Stalker:
@@ -289,7 +289,7 @@
       coord: [1811.23, 221.34, 1050.06]
       icon: link
       hide-icon-on-map: true
-      split-type: UserDefined
+      counter: .user-defined-split()
       notes: |
         Follow these .link([Detailed IST Instructions]https://docs.google.com/presentation/d/1AVJe_qxlJft2x4Dtv6zVQ9I1-esx9vKIZb9QDUpE56E/edit?usp=sharing). Here is a .link([video guide for the IST]https://youtu.be/0YZkmVyhfy4?t=3245).
 
@@ -491,7 +491,7 @@
       icon: hestu
       coord: [2069.45, 188.17, 1422.25]
       notes: Get 2 bow slots
-      split-type: UserDefined
+      counter: .user-defined-split()
 
   - .dir(.W)
   - _Korok::D20:
@@ -612,7 +612,7 @@
 
   - .!!(Revali's Gale):
       icon: medoh-done
-      split-type: UserDefined
+      counter: .user-defined-split()
       color: yellow
       movements:
           - to: [-3565.625,-1817.375]
@@ -635,7 +635,7 @@
             icon: bow
             color: white
           - pop
-      split-type: UserDefined
+      counter: .user-defined-split()
       notes: Follow these .link([Detailed WMC Instructions]https://docs.google.com/presentation/d/1_x1TgluUOfYzo2eR-L68ObXuBVSsVbmMfghdUgv-Osg/edit?usp=sharing). Here is a .link([video guide for the WMC]https://youtu.be/0YZkmVyhfy4?t=9690).
 
   - Eat speedfood:
@@ -678,7 +678,7 @@
 
   - _Warp::TravelMedallion<-3331.95,-2297.17>:
       text: SAVE and close game
-      split-type: None
+      counter: .user-defined-split()
       notes: This removes your broken slots and re-enables Ravali's Gale. You will load back at H55.
       icon: calamity
       hide-icon-on-map: true
@@ -913,7 +913,7 @@
 
   - _Chest::Special<Thunder Helm>:
       coord: [-3451.00, 440.69, 1341.50]
-      split-type: UserDefined
+      counter: .user-defined-split()
 
   - _Warp::Shrine::DaqoChisay:
       comment: WARP
@@ -956,7 +956,7 @@
   - .!!(Urbosa's Fury):
       icon: naboris-done
       color: orange
-      split-type: UserDefined
+      counter: .user-defined-split()
       movements:
           - to: [-3772,2851]
             warp: true
@@ -1497,7 +1497,7 @@
 
   - Mipha's Grace:
       icon: ruta-done
-      split-type: UserDefined
+      counter: .user-defined-split()
       color: "#ff6952"
       movements:
           - to: [3283.5,-431]
@@ -2262,7 +2262,7 @@
 
   - Daruk's Protection:
       icon: rudania-done
-      split-type: UserDefined
+      counter: .user-defined-split()
       movements:
           - to: [1572.5,-2422.5]
             warp: true
@@ -2525,7 +2525,7 @@
             color: white
             icon: ganon
           - pop
-      split-type: UserDefined
+      counter: .user-defined-split()
 
   - Continue:
       icon: tots
@@ -6337,7 +6337,7 @@
   - _Npc::SheikaFemale<Paya>:
       coord: [1772.71, 229.43, 984.31]
       notes: If she is not crying, then you missed some quest.
-      split-type: UserDefined
+      counter: .user-defined-split()
 
   - _Tod::Night:
       hide-icon-on-map: true
@@ -7054,7 +7054,7 @@
 
   - "100%":
       notes: For verification please show (1) map counter, (2) quest logs, (3) upgraded armor, (4) key items tab.
-      split-type: UserDefined
+      counter: .user-defined-split()
       hide-icon-on-map: true
       icon: memory-final
 

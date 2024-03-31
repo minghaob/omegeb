@@ -9,7 +9,15 @@ config:
 - use: Pistonight/celer-presets/botw/full.yaml
 - plugins:
   - use: link
+  - use: split-format
+    with:
+      Shrines: ".var(counter-korok) - .prop(text)"
   - use: variables
+- tags:
+    user-defined-split:
+      color: black
+      background: orange
+      split-type: UserDefined
 - presets:
     _Snap:
       Quest:
@@ -17,3 +25,6 @@ config:
         icon: camera
         icon-priority: 2
         comment: SNAP for QUEST
+
+- splits:
+  - user-defined-split
