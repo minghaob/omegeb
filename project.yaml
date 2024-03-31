@@ -9,3 +9,4 @@ config:
 - use: Pistonight/celer-presets/botw/full.yaml
 - plugins:
   - use: link
+  - use: variables
