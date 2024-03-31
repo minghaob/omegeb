@@ -16,7 +16,7 @@
 - Great Plateau:
   - SoR clip:
       icon: location
-      line-color: white
+      color: white
       notes: After cutscene, hold ZL and hop left to exit
       comment: Front entrance
 
@@ -445,7 +445,7 @@
 - Hestu:
   - _Warp::Shrine::TalohNaeg:
       comment: (Kakariko Village) WARP
-      line-color: lime
+      color: lime
 
   - .dir(<S) short
   - _Npc::SheikaMale<Olkin>:
@@ -595,7 +595,7 @@
   - .!!(Revali's Gale):
       icon: medoh-done
       split-type: UserDefined
-      line-color: yellow
+      color: yellow
       movements:
           - to: [-3565.625,-1817.375]
             warp: true
@@ -935,7 +935,7 @@
 
   - .!!(Urbosa's Fury):
       icon: naboris-done
-      line-color: orange
+      color: orange
       split-type: UserDefined
       movements:
           - to: [-3772,2851]
@@ -1193,7 +1193,7 @@
 - Vah Ruta:
   - _Warp::TechLab::Hateno:
       comment: WARP
-      line-color: yellow
+      color: yellow
 
   - .dir(<E)
   - _Korok::N44
@@ -1478,7 +1478,7 @@
   - Mipha's Grace:
       icon: ruta-done
       split-type: UserDefined
-      line-color: "#ff6952"
+      color: "#ff6952"
       movements:
           - to: [3283.5,-431]
             warp: true
@@ -2185,7 +2185,7 @@
       comment: Talk twice
 
   - _Warp::Shrine::ShaeMosah:
-      line-color: "#e812ff"
+      color: "#e812ff"
       comment: WARP
 
 - Vah Rudania:
@@ -3003,7 +3003,7 @@
       comment: WARP
       split-type: Warp
       icon: warp
-      line-color: "#33ff4e"
+      color: "#33ff4e"
 
   - _Korok::P09:
       comment: In Link's bed
@@ -3011,7 +3011,7 @@
 - Gerudo:
 
   - _Warp::Shrine::OwaDaim:
-      # line-color: violet
+      # color: violet
       text: Stasis shrine
       comment: WARP
 
@@ -3671,7 +3671,7 @@
 - Lake:
 
   - _Warp::Shrine::KuhTakkar:
-      line-color: "#00dded"
+      color: "#00dded"
       comment: WARP
 
   - .dir(.S)
@@ -5016,7 +5016,7 @@
 
   - _Warp::Shrine::DahHesho:
       comment: WARP Tarrey Town
-      line-color: gray
+      color: gray
       notes: Map 70.05%
 
   - .dir(N>)
@@ -5028,7 +5028,7 @@
 - Letter Quest:
 
   - _Warp::Tower::DuelingPeaks:
-      line-color: red
+      color: red
       comment: WARP
 
   - .dir(<E)
@@ -5842,7 +5842,7 @@
 - Hebra North:
 
   - _Warp::Shrine::ShadaNaw:
-      line-color: "#3a0063"
+      color: "#3a0063"
       comment: WARP
       notes: Make night for Stalnox if needed.
 
@@ -5912,7 +5912,7 @@
       comment: SNAP for quest
 
   - _Warp::Shrine::ShadaNaw:
-      line-color: "#b54dff"
+      color: "#b54dff"
       comment: WARP
 
   - .dir(E)
@@ -5925,7 +5925,7 @@
 
   - _Warp::Shrine::DahHesho:
       comment: WARP Tarrey Town
-      #line-color: gray
+      #color: gray
 
   - .dir(N>)
   - _Npc<Hudson>:
@@ -5942,7 +5942,7 @@
       comment: On bridge
 
   - _Warp::Shrine::NeezYohma:
-      line-color: lime
+      color: lime
       comment: WARP
 
   - _Npc::ZoraMale<Blue frog kid>:
@@ -6134,7 +6134,7 @@
 - Hebra West:
 
   - _Warp::Shrine::ShadaNaw:
-      #line-color: dodgerblue
+      #color: dodgerblue
       comment: WARP
 
   - .dir(.W)
@@ -6229,7 +6229,7 @@
 - Kakariko / Hateno:
 
   - _Warp::Shrine::TalohNaeg:
-      line-color: violet
+      color: violet
       comment: WARP
 
   - _Tod::Noon:
@@ -6746,7 +6746,7 @@
 - Hebra East:
 
   - _Warp::Shrine::ShadaNaw:
-      line-color: orange
+      color: orange
       comment: WARP (96.44%)
 
   - _Tod::Night:
@@ -6924,7 +6924,7 @@
 
   - _Warp::Shrine::DahHesho:
       comment: WARP 99.66%
-      line-color: darkgray
+      color: darkgray
       notes: ".link([Missable Locations]https://drive.google.com/file/d/1hN-TJYfVUIlQGkuJYRkK4f0mCPJoIyxW/view). Also missable: Dining Hall, Gisa Crater."
 
   - .dir(.E)
