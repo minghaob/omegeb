@@ -82,25 +82,22 @@
       coord: [-461.70, 178.41, 1990.18]
       comment: Text option 2-1-1-2
 
-  - _Shrine::OmanAu:
-      notes: Clear ragdoll glitch in shrine
-      comment: Magnesis shrine
-
-  - .dir(<S) low angle
   - _Tower::GreatPlateau
 
-  - Jump down, BLSS to old man's hut
+  - _Shrine::OmanAu:
+      comment: Magnesis shrine
 
-  - _Korok::P18
-  - _Shrine::OwaDaim:
-      comment: Stasis shrine
+  - _Warp::Tower::GreatPlateau
 
-  - Boulder ride
   - BLSS to shrine
   - _Shrine::KehNamut:
       comment: Cryonis shrine
 
-  - BLSS to Temple of Time
+  - BLSS to shrine
+  - _Shrine::OwaDaim:
+      comment: Stasis shrine
+
+  - BLSS to Temple of Time from shrine elevator
 
   - .!!(Paraglider):
       icon: king
@@ -1010,6 +1007,8 @@
       coord: [-3764.49, 141.00, 2699.75]
       comment: Deliver ice
 
+  - _Korok::W17
+
   - .dir(N>) + midair
   - _Shrine::DakoTah:
       comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=12002))
@@ -1021,6 +1020,16 @@
   - .dir(<S)
   - _Discover<Gerudo Desert Gateway>:
       coord: [-2924.12, 153.42, 2329.39]
+
+  - .dir(NW)
+  - _Korok::W19:
+      comment: On ledge
+
+  - _Shrine::KayNoh:
+      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=5207))
+
+  - Run .dir(N)
+  - _Korok::W15
 
   - .dir(.E)
   - _Npc<Sesami>:
@@ -1207,9 +1216,6 @@
       comment: WARP
       color: yellow
 
-  - .dir(<E)
-  - _Korok::N44
-
   - .dir(<N) + midairs to Naydra
   - Shoot an eye:
       icon: bow
@@ -1359,9 +1365,6 @@
   - _Boss::Hinox::Blue:
       coord: [2990.90, 251.39, 787.92]
 
-  - .dir(<N) midair
-  - _Korok::N06
-
   - .dir(W)
   - _Korok::N05
 
@@ -1395,7 +1398,10 @@
   - .dir(E) + midair
   - _Korok::Z43
 
-  - .dir(E>) and curve left
+  - .dir(S)
+  - _Korok::N06
+
+  - .dir(<<E)
   - _Korok::Z44
 
   - .dir(E)
@@ -2181,13 +2187,13 @@
   - .dir(E>)
   - _Korok::A27
 
-  - .dir(E>)
+  - _Snap::Quest<Stalhorse>:
+      coord: [4002.50, 123.59, -2157.50]
+
   - _Boss::Hinox::Stal:
       coord: [4146.69, 130.35, -2225.24]
 
-  - .dir(W)
-  - _Snap::Quest<Stalhorse>:
-      coord: [4002.50, 123.59, -2157.50]
+  - _Korok::A34
 
   - .dir(S.) + midairs
   - _Npc<Hudson>:
@@ -2655,257 +2661,28 @@
       comment: " "
       notes: .link([Strat for rain]https://twitter.com/bings_f/status/1576785789534765056) (skip next gale if you do this)
 
-  - .dir(S)
-  - _Korok::C32:
-      comment: " "
-  - _Korok::C27:
-      comment: " "
-
-  - .dir(<W)
-  - _Korok::C31
-
-  - .dir(NW)
-  - _Shrine::KatahChuki:
-      comment: Minor Test of Strength
-
-- Ridgeland:
-
-  - .dir(.W)
-  - _Korok::C30:
-      comment: " "
-
-  - .dir(N>)
-  - _Korok::C25
-
-  - .dir(<E)
-  - _Korok::C26
-  - _Discover<Water Reservoir>:
-      coord: [-596.67, 130.98, -525.32]
-
-  - .dir(W) run
-  - _Korok::C22
-
-  - .gale(GALE 3) + .dir(W>):
-      notes: Skip this gale if you used one for the castle bridge flower chase.
-  - _Korok::C21
-
-  - .dir(N>) run
-  - _Korok::C20
-
-  - .dir(N)
-  - _Boss::Talus::Rare:
-      coord: [-768.74, 152.76, -804.49]
-
-  - .dir(SE)
-  - _Korok::C15:
-      comment: " "
-
-  - .dir(<N)
-  - _Korok::C08:
-      comment: Drop Rusty Shield
-
-  - .dir(N) run
-  - _Korok::C03
-
-  - .dir(<<N)
-  - _Korok::C01:
-      comment: Near malice pillar
-
-  - .dir(W)
-  - _Korok::R11
-
-  - .dir(<S)
-  - _Korok::C07
-
-  - .dir(S)
-  - _Korok::C14
-
-  - In cave on west side
-  - _Shrine::NoyaNeha:
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=25392))
-      notes: Take ancient axe to use at Thundra Plateau to avoid lightning.
-
-  - Jump out → .dir(W)
-  - _Korok::R19:
-      comment: " "
-
-  - .dir(N>)
-  - _Korok::R16:
-      comment: Against cliff
-
-  - .dir(<N)
-  - _Korok::R10:
-      comment: In ruins
-
-  - .dir(N>)
-  - _Memory::IrchPlain:
-      comment: Memory
-  - _Korok::R07
-
-  - .dir(E)
-  - _Boss::Hinox::Blue:
-      coord: [-752.49, 187.41, -1268.12]
-
-  - .dir(N)
-  - _Korok::K29
-
-  - .dir(<E) + .dir(N>) midairs
-  - _Korok::K27:
-      comment: Pinwheel
-
-  - .dir(E) surf
-  - _Korok::K28
-
-  - .dir(<N)
-  - _Boss::Hinox::Blue:
-      coord: [-480.55, 278.99, -2039.64]
-
-  - .dir(<W)
-  - _Korok::K19
-
-  - midair .dir(NW)
-  - _Korok::K16
-
-  - midair .dir(S.)
-  - _Korok::K18
-
-  - .dir(<S)
-  - _Korok::K26
-
-  - .dir(W)
-  - _Korok::K24
-
-  - .dir(<<E)
-  - _Korok::K25
-
-  - Steal horse:
-      icon: calamity
-      coord: [-1019.50, 208.96, -1721.00]
-
-  - .dir(NW) ride
-  - _Korok::K17:
-      comment: " "
+  - _Korok::C33:
+      comment: Pinwheel on outer wall
 
   - .dir(S>)
-  - _Korok::K23:
-      comment: " "
+  - _Korok::C35
+  - _Memory::SacredGrounds:
+      comment: Memory
 
-  - midair .dir(S>)
-  - _Shrine::MonyaToma:
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=25933))
+  - .dir(S>>)
+  - _Korok::C42:
+      comment: Hanging in tree
 
-  - .dir(W)
-  - _Shrine::MaagNorah:
-      comment: In cave
-
-  - .dir(<<N)
-  - _Korok::H71:
-      comment: Across the canyon
-
-  - .dir(<S)
-  - _Korok::R03
-
-  - .gale(GALE 1) + .dir(W)
-  - _Boss::Talus::Luminous:
-      notes: Use .fury(FURY 1-3) if it's raining (waste the third one)
-      coord: [-2177.46, 322.30, -1585.39]
-  - _Korok::R02:
-      comment: Hidden behind rocks
-
-  - .dir(E>) + .dir(S)
-  - _Korok::R06
-
-  - .dir(E>)
-  - _Korok::R09:
-      comment: " "
-
-  - .dir(.S)
-  - _Tower::Ridgeland:
-      notes: Equip ancient axe + wooden shield to avoid lightning
-      comment: 35.73%
+  - _Korok::C43:
+      comment: Pinwheel
 
   - .dir(W)
-  - _Korok::R15:
+  - _Korok::C40:
       comment: " "
-
-  - .dir(<N)
-  - Launch red orb:
-      icon: tots
-      coord: [-2135.60, 219.98, -909.20]
-      comment: Fully charge stasis
-
-  - .dir(NW)
-  - Launch orange orb:
-      icon: tots
-      coord: [-2271.02, 228.58, -1040.27]
-      comment: Fully charge stasis
-
-  - .dir(NW)
-  - _Korok::R08:
-      comment: Against cliff
-
-  - .dir(<S)
-  - Place green orb:
-      icon: tots
-      coord: [-2288.70, 235.47, -882.80]
-
-  - Place other orbs:
-      icon: tots
-      hide-icon-on-map: true
-
-  - _Shrine::TohYahsa:
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=26469))
-
-  - .dir(S) short
-  - _Korok::R14
-
-  - .dir(<<S) super
-  - _Korok::R23:
-      notes: Complete R24 before the last flower of R23
-  - _Korok::R24:
-      comment: " "
-
-  - .dir(NE) run
-  - _Korok::R18:
-      comment: .gale(GALE 2)
-
-  - .dir(<<S)
-  - _Korok::R25:
-      comment: " "
-
-  - .dir(.E)
-  - _Shrine::ZaltaWa:
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=26656))
-
-  - .dir(E>)
-  - _Korok::C24:
-      comment: Small hill near bridge
-
-  - .dir(<N)
-  - _Korok::R26:
-      comment: " "
-
-  - _Korok::R27:
-      comment: Under bridge
-
-  - .dir(S)
-  - _Korok::R44:
-      comment: " "
-
-  - run .dir(S>)
-  - _Korok::R43:
-      comment: Hanging under bridge
-
-  - _Korok::R45:
-      comment: .gale(GALE 3)
+  - _Korok::C41
 
   - .dir(<W)
-  - _Korok::R42:
-      comment: " "
-
-  - .dir(SE)
-  - _Boss::Hinox::Black:
-      coord: [-1177.05, 139.48, 118.51]
+  - _Korok::C39
 
   - .dir(SE)
   - _Korok::C38:
@@ -2922,13 +2699,6 @@
   - .dir(N) up
   - _Korok::R48
 
-  - .dir(<W)
-  - _Discover<Jeddo Bridge>:
-      coord: [-1689.86, 205.00, 130.84]
-
-  - .dir(N)
-  - _Korok::R39
-
   - .dir(<E)
   - _Boss::Hinox::Blue:
       movements:
@@ -2943,12 +2713,16 @@
 
   - _Korok::R40
 
-  - .dir(S>)
+  - _Korok::R39
+
   - _Korok::R41
 
   - .dir(S>) surf
   - _Npc::Rito<Kass>:
       coord: [-1681.68, 214.50, 51.38]
+
+  - _Discover<Jeddo Bridge>:
+      coord: [-1689.86, 205.00, 130.84]
 
   - .dir(W)
   - Shoot through 2 rings:
@@ -3015,6 +2789,8 @@
       # color: violet
       text: Stasis shrine
       comment: WARP
+
+  - _Korok::P18
 
   - .dir(N.)
   - _Korok::P11:
@@ -3273,28 +3049,6 @@
   - _Boss::Talus::Luminous:
       coord: [-2898.47, 305.79, 2210.99]
 
-  - .dir(SW)
-  - _Memory::KaraKaraBazaar:
-      comment: Memory
-
-  - _Npc::Rito<Rito Guy>:
-      comment: An Ice Guy
-      notes: Talk twice
-      coord: [-3238.62, 130.10, 2574.56]
-
-  - _Npc::Gerudo<Rhondson>:
-      comment: From the Ground Up
-      coord: [-3269.43, 129.00, 2585.22]
-
-  - _Npc::SheikaMale<Guy on platform>:
-      comment: Eye of the Sandstorm
-      coord: [-3282.89, 134.16, 2540.95]
-
-  - .dir(<N)
-  - _Korok::W17
-
-  - .dir(W) + .dir(W) + .dir(N) + .dir(N):
-      coord: [-3587.5,2260.5]
   - Activate Pedestal:
       icon: tots
       hide-icon-on-map: true
@@ -3596,6 +3350,22 @@
   - .dir(E)
   - _Korok::W43
 
+  - _Npc::Rito<Rito Guy>:
+      comment: An Ice Guy
+      notes: Talk twice
+      coord: [-3238.62, 130.10, 2574.56]
+
+  - _Npc::Gerudo<Rhondson>:
+      comment: From the Ground Up
+      coord: [-3269.43, 129.00, 2585.22]
+
+  - _Npc::SheikaMale<Guy on platform>:
+      comment: Eye of the Sandstorm
+      coord: [-3282.89, 134.16, 2540.95]
+
+  - _Memory::KaraKaraBazaar:
+      comment: Memory
+
   - .dir(.E)
   - _Korok::W37
 
@@ -3629,16 +3399,6 @@
 
   - .dir(N>) + midair
   - _Korok::W30
-
-  - .dir(NW)
-  - _Korok::W19:
-      comment: On ledge
-
-  - _Shrine::KayNoh:
-      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=5207))
-
-  - Run .dir(N)
-  - _Korok::W15
 
   - _Npc<Sesami>:
       coord: [-2797.53, 135.05, 2240.97]
@@ -3965,12 +3725,16 @@
   - _Korok::L75:
       comment: " "
 
-  - .dir(<N)
+  - _Korok::L65
+
   - Kill 5 .enemy(Blue Bokoblins):
       icon: calamity
       coord: [485,3342]
       comment: Ancient Arrows
       notes: Horseback Hoodlums quest
+
+  - _Shrine::KaoMakagh:
+      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=7652))
 
   - .dir(S) to stable
   - _Material<Swift Carrot>:
@@ -3992,15 +3756,6 @@
       comment: Blynne
       notes: Make noon if raining. Need to finish twice, one under 1:30 and one under 1:15, to get horse saddle and bridle. Can dismount horse to restart if needed.
 
-  - .dir(S)
-  - _Shrine::KaoMakagh:
-      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=7652))
-
-  - .dir(S)
-  - Start L65 race:
-      icon: tots
-      coord: [546.27, 231.59, 3580.35]
-
   - .dir(E) ride horse:
       movements:
           - to: [502,3447.5]
@@ -4012,12 +3767,7 @@
       icon: tots
       coord: [161.5,3487]
 
-  - .dir(N>>)
-  - _Korok::L65:
-      coord: [271.72, 222.37, 3289.59]
-      comment: " "
-
-  - .dir(S.)
+  - .gale(GALE)
   - _Korok::L70:
       comment: " "
 
@@ -4275,48 +4025,45 @@
       notes: Glide below the height of the pole to trigger the location.
   - _Korok::D26
 
-  - .dir(E)
-  - _Korok::D27
+  - _Korok::D31
 
-  - .dir(S)
-  - _Korok::D34
+  - _Korok::D32
 
-  - .dir(W) run
   - _Korok::D33
 
-  - .dir(W>)
+  - _Korok::D34
+
+  - _Korok::D27
+
   - _Shrine::BoshKala:
       comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=9753))
 
-  - .dir(S) run
-  - _Korok::D32:
-      comment: " "
-
-  - .dir(S.)
-  - _Korok::D31
-
-  - .dir(S>)
-  - _Korok::D44:
-      comment: On ruins
-
-  - .dir(.W)
-  - _Korok::P12:
-      comment: Behind shrine
-
-  - Down
-  - _Korok::P13
-
-  - .dir(N>)
   - _Discover<Outpost Ruins>:
       coord: [-233.33, 113.99, 1671.11]
 
-  - .dir(<S)
   - _Boss::Talus::Luminous:
       comment: .fury(FURY 1-2)
       coord: [-176.93, 132.59, 1771.62]
 
   - .dir(S) run
   - _Korok::D43
+
+  - _Korok::P13
+
+  - _Korok::P12:
+      comment: .gale(GALE)
+
+  - _Korok::D44:
+      comment: On ruins
+
+  - _Memory::WestNecluda:
+      comment: Memory
+
+  - _Korok::D45:
+      comment: Behind statues
+
+  - _Korok::L04
+
 
   - .dir(<S) + .dir(E>)
   - _Korok::L03:
@@ -4351,15 +4098,6 @@
       comment: .fury(FURY 3)
       coord: [359.34, 114.45, 1904.01]
 
-  - .dir(S>>)
-  - _Korok::L04
-
-  - .dir(<N)
-  - _Memory::WestNecluda:
-      comment: Memory
-  - _Korok::D45:
-      comment: Behind statues
-
   - .dir(NE)
   - _Korok::D35:
       comment: Pinwheel
@@ -4382,27 +4120,14 @@
   - .dir(E>)
   - _Korok::D47
 
-  - .dir(<E)
-  - _Korok::D39:
-      comment: " "
+  - _Korok::D39
 
-  - .dir(E>)
-  - _Shrine::ReeDahee:
-      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=10487))
+  - _Tower::DuelingPeaks
 
-  - .dir(E>)
-  - _Shrine::HaDahamar:
-      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=10587))
+  - _Korok::D17
 
-  - .dir(E)
-  - _Korok::D42
-
-  - .dir(<N) + midair
   - _Boss::Talus::Stone:
       coord: [1465.91, 203.77, 1328.91]
-
-  - .dir(W)
-  - _Korok::D17
 
   - .dir(S) + midair
   - _Korok::D30
@@ -4431,12 +4156,11 @@
   - _Shrine::SheeVenath:
       comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=10893))
 
+  - _Shrine::ReeDahee:
+      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=10487))
+
   - .dir(<W)
   - _Korok::D48
-
-  - .dir(<N)
-  - _Tower::DuelingPeaks:
-      comment: 62.44%
 
 - Faron:
 
@@ -4990,7 +4714,7 @@
 
   - _Warp::Shrine::DahHesho:
       comment: WARP Tarrey Town
-      color: gray
+      color: white
       notes: Map 70.05%
 
   - .dir(N>)
@@ -4998,6 +4722,11 @@
       coord: [3981.65, 233.41, -1599.11]
       comment: 30 wood
       notes: Talk twice
+
+  - .dir(E)
+  - _Korok::A38:
+      comment: On bridge
+
 
 - Letter Quest:
 
@@ -5321,29 +5050,255 @@
   - Drop down
   - _Korok::C28
 
+
+  - .dir(S)
+  - _Korok::C32:
+      comment: " "
+  - _Korok::C27:
+      comment: " "
+
   - .dir(<W)
-  - _Korok::C33:
-      comment: Pinwheel on outer wall
+  - _Korok::C31
 
-  - .dir(S>)
-  - _Korok::C35
-  - _Memory::SacredGrounds:
-      comment: Memory
+  - .dir(NW)
+  - _Shrine::KatahChuki:
+      comment: Minor Test of Strength
 
-  - .dir(S>>)
-  - _Korok::C42:
-      comment: Hanging in tree
+- Ridgeland:
 
-  - _Korok::C43:
-      comment: Pinwheel
+  - .dir(.W)
+  - _Korok::C30:
+      comment: " "
+
+  - .dir(N>)
+  - _Korok::C25
+
+  - .dir(<E)
+  - _Korok::C26
+  - _Discover<Water Reservoir>:
+      coord: [-596.67, 130.98, -525.32]
+
+  - .dir(W) run
+  - _Korok::C22
+
+  - .gale(GALE 3) + .dir(W>):
+      notes: Skip this gale if you used one for the castle bridge flower chase.
+  - _Korok::C21
+
+  - .dir(N>) run
+  - _Korok::C20
+
+  - .dir(N)
+  - _Boss::Talus::Rare:
+      coord: [-768.74, 152.76, -804.49]
+
+  - .dir(SE)
+  - _Korok::C15:
+      comment: " "
+
+  - .dir(<N)
+  - _Korok::C08:
+      comment: Drop Rusty Shield
+
+  - .dir(N) run
+  - _Korok::C03
+
+  - .dir(<<N)
+  - _Korok::C01:
+      comment: Near malice pillar
 
   - .dir(W)
-  - _Korok::C40:
+  - _Korok::R11
+
+  - .dir(<S)
+  - _Korok::C07
+
+  - .dir(S)
+  - _Korok::C14
+
+  - In cave on west side
+  - _Shrine::NoyaNeha:
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=25392))
+      notes: Take ancient axe to use at Thundra Plateau to avoid lightning.
+
+  - Jump out → .dir(W)
+  - _Korok::R19:
       comment: " "
-  - _Korok::C41
+
+  - .dir(N>)
+  - _Korok::R16:
+      comment: Against cliff
+
+  - .dir(<N)
+  - _Korok::R10:
+      comment: In ruins
+
+  - .dir(N>)
+  - _Memory::IrchPlain:
+      comment: Memory
+  - _Korok::R07
+
+  - .dir(E)
+  - _Boss::Hinox::Blue:
+      coord: [-752.49, 187.41, -1268.12]
+
+  - .dir(N)
+  - _Korok::K29
+
+  - .dir(<E) + .dir(N>) midairs
+  - _Korok::K27:
+      comment: Pinwheel
+
+  - .dir(E) surf
+  - _Korok::K28
+
+  - .dir(<N)
+  - _Boss::Hinox::Blue:
+      coord: [-480.55, 278.99, -2039.64]
 
   - .dir(<W)
-  - _Korok::C39
+  - _Korok::K19
+
+  - midair .dir(NW)
+  - _Korok::K16
+
+  - midair .dir(S.)
+  - _Korok::K18
+
+  - .dir(<S)
+  - _Korok::K26
+
+  - .dir(W)
+  - _Korok::K24
+
+  - .dir(<<E)
+  - _Korok::K25
+
+  - Steal horse:
+      icon: calamity
+      coord: [-1019.50, 208.96, -1721.00]
+
+  - .dir(NW) ride
+  - _Korok::K17:
+      comment: " "
+
+  - .dir(S>)
+  - _Korok::K23:
+      comment: " "
+
+  - midair .dir(S>)
+  - _Shrine::MonyaToma:
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=25933))
+
+  - .dir(W)
+  - _Shrine::MaagNorah:
+      comment: In cave
+
+  - .dir(<<N)
+  - _Korok::H71:
+      comment: Across the canyon
+
+  - .dir(<S)
+  - _Korok::R03
+
+  - .gale(GALE 1) + .dir(W)
+  - _Boss::Talus::Luminous:
+      notes: Use .fury(FURY 1-3) if it's raining (waste the third one)
+      coord: [-2177.46, 322.30, -1585.39]
+  - _Korok::R02:
+      comment: Hidden behind rocks
+
+  - .dir(E>) + .dir(S)
+  - _Korok::R06
+
+  - .dir(E>)
+  - _Korok::R09:
+      comment: " "
+
+  - .dir(.S)
+  - _Tower::Ridgeland:
+      notes: Equip ancient axe + wooden shield to avoid lightning
+      comment: 35.73%
+
+  - .dir(<N)
+  - Launch red orb:
+      icon: tots
+      coord: [-2135.60, 219.98, -909.20]
+      comment: Fully charge stasis
+
+  - .dir(NW)
+  - Launch orange orb:
+      icon: tots
+      coord: [-2271.02, 228.58, -1040.27]
+      comment: Fully charge stasis
+
+  - .dir(NW)
+  - _Korok::R08:
+      comment: Against cliff
+
+  - .dir(<S)
+  - Place green orb:
+      icon: tots
+      coord: [-2288.70, 235.47, -882.80]
+
+  - Place other orbs:
+      icon: tots
+      hide-icon-on-map: true
+
+  - _Shrine::TohYahsa:
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=26469))
+
+  - .dir(S) short
+  - _Korok::R14
+
+  - _Korok::R15
+
+  - _Korok::R23:
+      notes: Complete R24 before the last flower of R23
+  - _Korok::R24:
+      comment: " "
+
+  - .dir(NE) run
+  - _Korok::R18:
+      comment: .gale(GALE 2)
+
+  - .dir(<<S)
+  - _Korok::R25:
+      comment: " "
+
+  - .dir(.E)
+  - _Shrine::ZaltaWa:
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=26656))
+
+  - .dir(E>)
+  - _Korok::C24:
+      comment: Small hill near bridge
+
+  - .dir(<N)
+  - _Korok::R26:
+      comment: " "
+
+  - _Korok::R27:
+      comment: Under bridge
+
+  - .dir(S)
+  - _Korok::R44:
+      comment: " "
+
+  - run .dir(S>)
+  - _Korok::R43:
+      comment: Hanging under bridge
+
+  - _Korok::R45:
+      comment: .gale(GALE 3)
+
+  - .dir(<W)
+  - _Korok::R42:
+      comment: " "
+
+  - .dir(SE)
+  - _Boss::Hinox::Black:
+      coord: [-1177.05, 139.48, 118.51]
 
   - .dir(<<W)
   - _Discover<Ancient Tree Stump>:
@@ -5372,14 +5327,6 @@
   - _Korok::R54:
       comment: .gale(GALE 2) from R55
 
-  - .dir(SW)
-  - _Boss::Hinox::Stal:
-      coord: [-2217.00, 372.31, 584.00]
-  - _Korok::R62:
-      comment: " "
-
-
-  - .dir(NE)
   - _Korok::R53:
       comment: On peak
 
@@ -5389,6 +5336,13 @@
 
   - .dir(S) run
   - _Korok::R61
+
+  - .dir(SW)
+  - _Boss::Hinox::Stal:
+      coord: [-2217.00, 372.31, 584.00]
+  - _Korok::R62:
+      comment: " "
+
 
   - .dir(E>) far down
   - _Korok::R68:
@@ -5421,12 +5375,12 @@
   - _Korok::G14:
       comment: Pinwheel
 
-  - .dir(N>) far
-  - _Korok::R70
-
   - .dir(W) short
   - _Korok::R73:
       comment: Stasis and shoot boulder
+
+  - .dir(N>) far
+  - _Korok::R70
 
   - .dir(W>>)
   - _Korok::R67
@@ -5896,14 +5850,6 @@
       comment: 50 wood
       notes: Talk twice
 
-  - .dir(NE)
-  - _Korok::A34:
-      comment: " "
-
-  - .dir(S)
-  - _Korok::A38:
-      comment: On bridge
-
   - _Warp::Shrine::NeezYohma:
       color: lime
       comment: WARP
@@ -6167,10 +6113,6 @@
   - _Korok::T01:
       comment: On cliff past rubble
 
-  - .dir(.N) + midair
-  - _Discover<Sturnida Hot Spring>:
-      notes: Drop down above hot spring, then glide to updraft.
-      coord: [-4080.50, 173.00, -2720.00]
 
   - .dir(<N) midair
   - _Korok::H39:
@@ -6178,6 +6120,11 @@
 
   - .dir(.S) short
   - _Korok::H41
+
+  - .dir(.N) + midair
+  - _Discover<Sturnida Hot Spring>:
+      notes: Drop down above hot spring, then glide to updraft.
+      coord: [-4080.50, 173.00, -2720.00]
 
   - .dir(SE) surf down
   - _Korok::H42:
@@ -6396,6 +6343,13 @@
   - _Korok::D55:
       comment: High ledge on cliff wall
 
+  - .dir(E>)
+  - _Shrine::HaDahamar:
+      comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=10587))
+
+  - .dir(E)
+  - _Korok::D42
+
   - .dir(N>)
   - _Korok::D51:
       comment: " "
@@ -6550,6 +6504,9 @@
 
   - .gale(GALE 3)
   - _Korok::N47
+
+  - .dir(<E)
+  - _Korok::N44
 
   - .dir(<E) + .dir(N>)
   - _Korok::N32:
