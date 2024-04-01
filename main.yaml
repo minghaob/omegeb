@@ -1405,16 +1405,16 @@
   - .dir(<N)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [3393.74, 314.18, 49.77]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(W)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [3265.50, 341.84, 38.70]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(W>) down
   - _Korok::Z33
@@ -1422,9 +1422,9 @@
   - .dir(<W)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [3099.83, 236.67, 70.72]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(N>) turn
   - _Discover<Luto's Crossing>:
@@ -1436,16 +1436,16 @@
   - .dir(<N)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [3062.39, 184.92, -216.65]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(E.)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [3260.31, 241.83, -145.22]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(N>)
   - _Korok::Z25
@@ -1511,9 +1511,9 @@
   - .dir(W>) + .dir(N)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [3207.40, 344.67, -736.45]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(S>)
   - Activate .!!(Pedestal):
@@ -1558,9 +1558,9 @@
   - .dir(<W)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [3720.59, 461.92, -532.05]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(W)
   - _Korok::Z17:
@@ -5110,16 +5110,16 @@
   - .dir(E)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [2868.11, 249.51, -68.34]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(S) run/drop
   - _Npc::ZoraMale<Zora Monument>:
       coord: [2877.09, 229.49, -32.75]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - S drop
   - _Discover<Oren Bridge>:
@@ -5128,9 +5128,9 @@
   - .dir(S.)
   - _Npc::ZoraMale<Zora Monument>:
       coord: [2838.09, 228.01, 188.33]
-      comment: .v(Monument)/10
-      var-change:
-          Monument: 1
+      comment: .var(Monument)/10
+      vars:
+          Monument: .add(1)
 
   - .dir(NW)
   - _Korok::Z31
