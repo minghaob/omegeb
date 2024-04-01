@@ -18,6 +18,12 @@ config:
       color: black
       background: orange
       split-type: UserDefined
+    gale:
+      color: black
+      background: lime
+    fury:
+      color: black
+      background: orange
 - presets:
     _Snap:
       Quest:

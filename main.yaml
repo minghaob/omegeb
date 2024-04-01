@@ -389,7 +389,7 @@
             color: white
           - pop
       comment: Snipe with Falcon Bow
-      icon: null
+      icon-map: null
 
   - .dir(N) + midair
   - _Tower::Hateno
@@ -658,7 +658,6 @@
 
   - .dir(N>>)
   - _Boss::Talus::Frost:
-      fury: 3
       coord: [-3709.50, 331.28, -2347.00]
 
   - .dir(N.)
@@ -701,12 +700,10 @@
   - .dir(S>)
   - _Korok::H33
 
-  - .gale() + run .dir(E):
-      gale: 1
+  - .gale(GALE 1) + run .dir(E)
   - _Korok::H34
 
-  - .gale() + .dir(S) down:
-      gale: 1
+  - .gale(GALE 2) + .dir(S) down
   - _Korok::H46
 
   - .dir(SE)
@@ -724,7 +721,7 @@
             icon: korok-balloon
             color: white
           - pop
-      icon: null
+      icon-map: null
 
   - _Korok::H47:
       comment: Look .dir(NW) at river head
@@ -734,7 +731,7 @@
             icon: korok-balloon
             color: white
           - pop
-      icon: null
+      icon-map: null
 
   - .dir(N)
   - _Korok::H44:
@@ -757,8 +754,7 @@
   - _Shrine::GeeHarah:
       comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=7903))
 
-  - .gale() + .dir(N) + .dir(E>) midair:
-      gale: 1
+  - .gale(GALE 3) + .dir(N) + .dir(E>) midair:
       movements:
           - to: [-2389,-2355]
 
@@ -944,8 +940,7 @@
   - Vah Naboris:
       icon: naboris-enter
       coord: [-2754.62, 112.53, 3749.44]
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=11408)) .gale()
-      gale: 3
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=11408)) .gale(GALE 1-3)
       hide-icon-on-map: true
 
   - .boss(Thunderblight):
@@ -1041,7 +1036,7 @@
       comment: Talk Twice
       hide-icon-on-map: true
 
-  - _Warp::VahNaboris:
+  - _Warp::Beast::Naboris:
       comment: WARP
 
   - .dir(W>) run
@@ -1112,8 +1107,7 @@
   - .dir(SE)
   - _Boss::Talus::Luminous:
       coord: [-2096.46, 318.46, 3037.91]
-      comment: .fury() Collect drops
-      fury: 3
+      comment: .fury(FURY 1-3) Collect drops
       notes: Intentionally "wasting" a fury. Look for amber, flint, and luminous stones.
 
   - .dir(SE)
@@ -1162,8 +1156,7 @@
   - _Shrine::SumaSahma:
       comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=12851))
 
-  - .gale() + .dir(N>):
-      gale: 1
+  - .gale(GALE 1) + .dir(N>)
   - _Korok::W53:
       comment: On pillar
 
@@ -1174,8 +1167,7 @@
   - _Korok::W46:
       comment: Down in corner
 
-  - .gale() .dir(SW):
-      gale: 1
+  - .gale(GALE 2) .dir(SW)
   - _Korok::W45
 
   - .dir(<W)
@@ -1231,8 +1223,7 @@
   - _Korok::N24:
       comment: " "
 
-  - .gale():
-      gale: 1
+  - .gale(GALE 3)
   - Shoot an eye:
       icon: bow
       hide-icon-on-map: true
@@ -1268,7 +1259,7 @@
           - pop
       comment: .rune(Stasis) and bomb arrow
       notes: Aim with bow to get apples to spawn
-      icon: null
+      icon-map: null
 
   - _Korok::N22
 
@@ -1333,7 +1324,7 @@
             color: white
             icon: camera
           - pop
-      icon: null
+      icon-map: null
 
   - .dir(<N)
   - _Memory::LanayruRoad:
@@ -1474,8 +1465,7 @@
   - _Shrine::NeezYohma:
       comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=15220))
 
-  - .gale() + .dir(E):
-      gale: 1
+  - .gale(GALE 1) + .dir(E)
   - _Korok::Z18
 
   - .dir(S)
@@ -1489,8 +1479,7 @@
   - Vah Ruta:
       icon: ruta-enter
       coord: [3662.40, 315.66, -175.42]
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=15498)) .gale()
-      gale: 1
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=15498)) .gale(GALE 2)
 
   - .boss(Waterblight):
       icon: calamity
@@ -1594,8 +1583,7 @@
   - .dir(W) down
   - _Korok::A41
 
-  - .gale() .dir(NE):
-      gale: 1
+  - .gale(GALE 3) .dir(NE)
   - _Korok::A40
 
   - .dir(N) down
@@ -1705,8 +1693,7 @@
   - _Korok::E33:
       comment: " "
 
-  - .dir(W) + midair + .gale():
-      gale: 1
+  - .dir(W) + midair + .gale(GALE 1)
 
   - _Tower::Eldin
 
@@ -1717,8 +1704,7 @@
   - .dir(<W)
   - _Boss::Talus::Igneo:
       coord: [1795.54, 394.18, -1746.73]
-      comment: .fury() from ledge above
-      fury: 3
+      comment: .fury(FURY 1-3) from ledge above
 
   - .dir(W)
   - _Korok::E26:
@@ -1813,8 +1799,7 @@
       coord: [1630.68, 560.52, -2941.37]
       notes: You can get into the cave before the rocks load in. If you don't, ESC through the back. .link([Example of clip in.]https://youtu.be/s8UMMQmUioQ?list=PLxRHLKOlaIbj6REgghSRSqMeAPxUX33ax&t=5167)
 
-  - .gale():
-      gale: 1
+  - .gale(GALE 2)
   - _Korok::E08:
       comment: Top of northern mine
 
@@ -1827,8 +1812,7 @@
       comment: Down in corner
       notes: Ore deposits here for amber if still needed
 
-  - .gale() + .dir(<W):
-      gale: 1
+  - .gale(GALE 3) + .dir(<W)
   - _Boss::Talus::Igneo:
       coord: [2146.50, 535.83, -3011.50]
       notes: Igneo taluses have the best chance to drop flint. Collect drops here and from the remaining three igneo taluses until you have 11 flint.
@@ -1974,13 +1958,12 @@
           - pop
       notes: Look back and zoom in
       comment: SNAP
-      icon: null
+      icon-map: null
 
   - .dir(NE)
   - _Korok::E03
 
-  - .gale() + .dir(E.) midair:
-      gale: 1
+  - .gale(GALE 1) + .dir(E.) midair
   - _Korok::E04
 
   - .dir(<<S)
@@ -1990,9 +1973,8 @@
   - Gut Check Challenge:
       icon: tots
       hide-icon-on-map: true
-      comment: .dir(W.) from tree and .gale()
+      comment: .dir(W.) from tree and .gale(GALE 2)
       notes: Collect 5 red rupees
-      gale: 1
 
   - _Shrine::GoraeTorr:
       comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=19367))
@@ -2018,8 +2000,7 @@
 
   - .dir(S>)
   - _Korok::A05:
-      comment: .gale()
-      gale: 1
+      comment: .gale(GALE 3)
 
   - .dir(S)
   - _Korok::A10:
@@ -2036,7 +2017,7 @@
           icon: camera
         - pop
       comment: SNAP for quest
-      icon: null
+      icon-map: null
   - _Korok::A11
 
   - .dir(E)
@@ -2054,7 +2035,7 @@
             icon: hinox-black
             color: white
           - pop
-      icon: null
+      icon-map: null
 
   - .dir(W>)
   - _Shrine::ZunaKai:
@@ -2258,8 +2239,7 @@
   - Vah Rudania:
       icon: tots
       hide-icon-on-map: true
-      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=21567)) .gale()
-      gale: 1
+      comment: (.link([vod]https://youtu.be/Aw14LJhXV-8&t=21567)) .gale(GALE 1)
 
   - .boss(Fireblight):
       icon: calamity
@@ -2291,8 +2271,7 @@
   - _Npc::Goron<Bludo>:
       coord: [1713.95, 498.05, -2446.92]
 
-  - .gale() + .dir(.S):
-      gale: 1
+  - .gale(GALE 2) + .dir(.S)
   - _Npc::Goron<Goron Kid>:
       coord: [1787.98, 581.97, -2244.39]
       comment: Dugby
@@ -2433,9 +2412,8 @@
       comment: Freezing Rod
       coord: [419.28, 248.65, -2134.93]
 
-  - Waste a .gale():
+  - Waste a .gale(GALE 3):
       icon: medoh-done
-      gale: 1
       comment: to recharge them for castle
 
   - Follow Oaki:
@@ -2566,8 +2544,7 @@
       time-override: 720
   - _Boss::Talus::Rare:
       coord: [-136.65, 127.21, -956.26]
-      comment: .fury()
-      fury: 3
+      comment: .fury(FURY 1-3)
 
   - Updraft
   - _Chest<Shard of Farosh's Fang>:
@@ -2599,8 +2576,7 @@
   - _Korok::X04:
       comment: Pinwheel on castle wall
 
-  - .dir(S) + .gale():
-      gale: 1
+  - .dir(S) + .gale(GALE 1)
   - _Discover<Zelda's Study>:
       coord: [-383.72, 273.58, -995.87]
   - _Memory::HyruleCastle:
@@ -2641,9 +2617,7 @@
       comment: Far
       notes: Aim at top of the wall in background
 
-  - .gale() + midair:
-      gale: 1
-      suppress: [GaleRecharge]
+  - .gale(GALE 2) + midair
   - _Korok::X16:
       comment: Spire of Second Gatehouse
 
@@ -2711,8 +2685,7 @@
   - .dir(W) run
   - _Korok::C22
 
-  - .gale() + .dir(W>):
-      gale: 1
+  - .gale(GALE 3) + .dir(W>):
       notes: Skip this gale if you used one for the castle bridge flower chase.
   - _Korok::C21
 
@@ -2832,11 +2805,9 @@
   - .dir(<S)
   - _Korok::R03
 
-  - .gale() + .dir(W):
-      gale: 1
+  - .gale(GALE 1) + .dir(W)
   - _Boss::Talus::Luminous:
-      notes: Use .fury() if it's raining (waste the third one)
-      fury: 3
+      notes: Use .fury(FURY 1-3) if it's raining (waste the third one)
       coord: [-2177.46, 322.30, -1585.39]
   - _Korok::R02:
       comment: Hidden behind rocks
@@ -2896,8 +2867,7 @@
 
   - .dir(NE) run
   - _Korok::R18:
-      comment: .gale()
-      gale: 1
+      comment: .gale(GALE 2)
 
   - .dir(<<S)
   - _Korok::R25:
@@ -2927,8 +2897,7 @@
       comment: Hanging under bridge
 
   - _Korok::R45:
-      comment: .gale()
-      gale: 1
+      comment: .gale(GALE 3)
 
   - .dir(<W)
   - _Korok::R42:
@@ -2970,7 +2939,7 @@
             color: white
           - pop
       notes: Shoot from R40
-      icon: null
+      icon-map: null
 
   - _Korok::R40
 
@@ -3058,8 +3027,7 @@
   - .dir(<<N)
   - _Boss::Talus::Stone:
       coord: [-1087.75, 179.14, 1663.18]
-      comment: .fury()
-      fury: 1
+      comment: .fury(FURY 1)
       notes: Check that it's loaded in before unleashing fury
 
   - .dir(E) run
@@ -3103,8 +3071,7 @@
   - .dir(W>)
   - _Boss::Talus::Luminous:
       coord: [-514.75, 127.49, 1181.74]
-      comment: .fury()
-      fury: 2
+      comment: .fury(FURY 2-3)
 
   - .dir(.W)
   - _Memory::LakeKolomo:
@@ -3146,8 +3113,7 @@
   - .dir(<N)
   - _Korok::R74
 
-  - .gale() + .dir(<N):
-      gale: 1
+  - .gale(GALE 1) + .dir(<N)
   - _Memory::SanidinPark:
       comment: Memory
 
@@ -3218,8 +3184,7 @@
   - _Shrine::DahKaso:
       comment: Minor Test of Strength
 
-  - .gale() + .dir(W>):
-      gale: 1
+  - .gale(GALE 2) + .dir(W>)
   - _Korok::G29
 
   - .dir(<S)
@@ -3303,8 +3268,7 @@
   - _Korok::G35:
       comment: In overlook
 
-  - .gale() + .dir(<W):
-      gale: 1
+  - .gale(GALE 3) + .dir(<W)
 
   - _Boss::Talus::Luminous:
       coord: [-2898.47, 305.79, 2210.99]
@@ -3353,8 +3317,7 @@
   - .dir(<N)
   - _Boss::Talus::Luminous:
       coord: [-4312.07, 418.11, 1446.89]
-      comment: .fury()
-      fury: 2
+      comment: .fury(FURY 1-2)
 
   - _Korok::G21
 
@@ -3433,7 +3396,7 @@
             color: white
             icon: camera
           - pop
-      icon: null
+      icon-map: null
 
   - .dir(.S)
   - _Boss::Talus::Rare:
@@ -3492,8 +3455,7 @@
   - _Shrine::KemaZoos:
       comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=3626))
 
-  - Step back and .gale():
-      gale: 1
+  - Step back and .gale(GALE 1)
 
   - _Korok::W09:
       comment: Top of skeleton
@@ -3511,8 +3473,7 @@
   - midair .dir(<S)
   - _Boss::Molduga:
       coord: [-4832.61, 133.21, 2800.42]
-      comment: .fury() + shoot
-      fury: 1
+      comment: .fury(FURY 3) + shoot
 
   - Light 4 fires:
       icon: calamity
@@ -3591,8 +3552,7 @@
       notes: Talk 3 times
       time-override: 360
 
-  - .gale() + .dir(<W) midair:
-      gale: 1
+  - .gale(GALE 2) + .dir(<W) midair
   - _Korok::W42:
       comment: On water tower
 
@@ -3653,7 +3613,7 @@
         - pop
       comment: In arms of statue
       notes: Can use bomb arrow from orb
-      icon: null
+      icon-map: null
 
   - Complete orb puzzle:
       icon: tots
@@ -3663,7 +3623,7 @@
   - _Shrine::KorshOhu:
       comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=5056))
 
-  - .gale() + .dir(S):
+  - .gale(GALE 3) + .dir(S):
       gale: 1
   - _Korok::W40
 
@@ -3718,8 +3678,7 @@
   - .dir(E)
   - _Boss::Talus::Frost:
       coord: [-2919.99, 656.12, 1294.27]
-      comment: .fury()
-      fury: 3
+      comment: .fury(FURY 1-3)
 
   - .dir(<E)
   - _Korok::G18:
@@ -3859,8 +3818,7 @@
   - _Korok::L14:
       comment: " "
 
-  - .dir(N) + .gale():
-      gale: 1
+  - .dir(N) + .gale(GALE 1)
   - _Korok::D54
 
   - Drop .dir(S)
@@ -3917,8 +3875,7 @@
   - _Korok::L51:
       notes: Stasis + 2 hits + shoot upwards
 
-  - .gale() + .dir(W):
-      gale: 1
+  - .gale(GALE 2) + .dir(W)
   - _Tower::Lake:
       comment: 51.69%
 
@@ -3970,8 +3927,7 @@
   - _Korok::L66:
       comment: .rune(Cryo) block
 
-  - .gale() + .dir(SE):
-      gale: 1
+  - .gale(GALE 3) + .dir(SE)
   - _Korok::L72:
       comment: "Top of pillar"
 
@@ -4068,8 +4024,7 @@
   - .dir(E>) short
   - _Korok::L71
 
-  - .gale() + .dir(S):
-      gale: 1
+  - .gale(GALE 1) + .dir(S)
   - _Korok::L73:
       comment: Pinwheel on peak
 
@@ -4120,8 +4075,7 @@
       icon: tots
       hide-icon-on-map: true
   - _Boss::Hinox::Stal:
-      comment: Shoot once + .fury()
-      fury: 3
+      comment: Shoot once + .fury(FURY 1-3)
       coord: [100.50, 111.28, 3371.00]
       notes: Kill stalnox while the horse is approaching you.
 
@@ -4195,8 +4149,7 @@
   - _Korok::P16:
       comment: " "
 
-  - .gale() + .dir(NW) midair:
-      gale: 1
+  - .gale(GALE 2) + .dir(NW) midair
   - _Korok::P15
 
   - .dir(NW) surf
@@ -4359,8 +4312,7 @@
 
   - .dir(<S)
   - _Boss::Talus::Luminous:
-      comment: .fury()
-      fury: 2
+      comment: .fury(FURY 1-2)
       coord: [-176.93, 132.59, 1771.62]
 
   - .dir(S) run
@@ -4368,8 +4320,7 @@
 
   - .dir(<S) + .dir(E>)
   - _Korok::L03:
-      comment: .gale() to cryo block
-      gale: 1
+      comment: .gale(GALE 3) to cryo block
 
   - .dir(<S)
   - _Korok::L10:
@@ -4397,8 +4348,7 @@
   - _Korok::L01
 
   - _Boss::Talus::Stone:
-      comment: .fury()
-      fury: 1
+      comment: .fury(FURY 3)
       coord: [359.34, 114.45, 1904.01]
 
   - .dir(S>>)
@@ -4531,8 +4481,7 @@
   - _Korok::L12:
       comment: " "
 
-  - .gale() + .dir(S>):
-      gale: 1
+  - .gale(GALE 1) + .dir(S>)
   - _Korok::L28
 
   - .dir(E)
@@ -4590,8 +4539,7 @@
 
   - .dir(N.)
   - _Boss::Talus::Stone:
-      comment: .fury()
-      fury: 1
+      comment: .fury(FURY 1)
       coord: [1257.12, 355.80, 2176.52]
 
   - .dir(SE)
@@ -4605,7 +4553,7 @@
             color: white
           - pop
       notes: .link([Visual cue]https://youtu.be/T5MXXtNCbX0?t=11835) if not raining
-      icon: null
+      icon-map: null
 
   - .dir(SW)
   - _Korok::F04:
@@ -4625,8 +4573,7 @@
 
   - .dir(E>)
   - _Korok::F16:
-      comment: .gale()
-      gale: 1
+      comment: .gale(GALE 2)
 
   - .dir(<W)
   - _Korok::F15
@@ -4675,8 +4622,7 @@
 
   - .dir(W)
   - _Boss::Talus::Stone:
-      comment: .fury()
-      fury: 1
+      comment: .fury(FURY 2)
       coord: [1392.02, 107.03, 3727.59]
   - _Korok::F53
 
@@ -4685,10 +4631,9 @@
       comment: Under cliff
 
   - .dir(E)
-  - .fury() .!!(Enemy Camp):
+  - .fury(FURY 3) .!!(Enemy Camp):
       icon: calamity
       comment: Take Back the Sea
-      fury: 1
       coord: [2087,3916.5]
       notes: Ancient arrow on the enemies that aren't killed by fury
 
@@ -4716,8 +4661,7 @@
 
   - .dir(N)
   - _Korok::F28:
-      comment: .gale()
-      gale: 1
+      comment: .gale(GALE 3)
 
   - .dir(W>)
   - _Korok::F26:
@@ -4866,16 +4810,14 @@
   - _Shrine::KahYah:
       comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=13599))
 
-  - .gale() + .dir(W) midair:
-      gale: 1
+  - .gale(GALE 1) + .dir(W) midair
 
   - _Korok::F37:
       comment: " "
 
   - .dir(S) swim
   - _Boss::Talus::Stone:
-      comment: .fury() from above
-      fury: 1
+      comment: .fury(FURY 1) from above
       coord: [3272.52, 133.05, 3409.85]
 
   - .dir(<W)
@@ -4981,9 +4923,8 @@
       comment: " "
 
   - .dir(N)
-  - .fury() .!!(Enemy Camp):
+  - .fury(FURY 2) .!!(Enemy Camp):
       icon: calamity
-      fury: 1
       notes: Sheep Rustlers
       coord: [4121.98, 113.17, 2369.62]
 
@@ -5043,8 +4984,7 @@
           - to: [4500.46, 109.56, 3392.43]
           - to: [4674.92, 168.30, 3742.44]
 
-  - .gale() to shrine:
-      gale: 1
+  - .gale(GALE 2) to shrine
   - _Shrine::KorguChideh:
       comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=14943))
 
@@ -5099,8 +5039,7 @@
 
   - .dir(E) surf
   - _Boss::Talus::Stone:
-      comment: .fury()
-      fury: 1
+      comment: .fury(FURY 3)
       coord: [705.34, 137.62, 1471.88]
 
   - .dir(N>)
@@ -5240,8 +5179,7 @@
   - _Memory::HyruleField:
       comment: Memory
 
-  - .gale() + .dir(.W):
-      gale: 1
+  - .gale(GALE 3) + .dir(.W)
   - _Korok::C56
 
   - .dir(N>)
@@ -5317,8 +5255,7 @@
 
   - .dir(E>)
   - _Boss::Talus::Luminous:
-      comment: .fury()
-      fury: 3
+      comment: .fury(FURY 1-3)
       notes: Waste a fury if it's not raining. If raining, save a fury to kill the Keese around C09.
       coord: [771.50, 152.53, -1014.00]
 
@@ -5336,8 +5273,7 @@
 
   - .dir(W)
   - _Korok::C09:
-      comment: .gale() from shrine
-      gale: 1
+      comment: .gale(GALE 1) from shrine
       notes: Fury keese if raining
 
   - .dir(SW)
@@ -5434,8 +5370,7 @@
 
   - .dir(N) run
   - _Korok::R54:
-      comment: .gale() from R55
-      gale: 1
+      comment: .gale(GALE 2) from R55
 
   - .dir(SW)
   - _Boss::Hinox::Stal:
@@ -5479,7 +5414,7 @@
             icon: korok-acorn
             color: white
           - pop
-      icon: null
+      icon-map: null
   - _Korok::R76
 
   - .dir(<W) + climb
@@ -5520,8 +5455,7 @@
 
   - midair .dir(<N)
   - _Boss::Talus::Rare:
-      comment: .fury() or shoot if no fury
-      fury: 3
+      comment: .fury(FURY 1-3) or shoot if no fury
       coord: [-3137.50, 317.31, 72.90]
 
   - .dir(.W) down
@@ -5543,7 +5477,7 @@
             icon: korok-acorn
             color: white
           - pop
-      icon: null
+      icon-map: null
 
   - .dir(W>)
   - _Korok::R33
@@ -5558,8 +5492,7 @@
 
 - Tabantha:
 
-  - .gale() + .dir(E>):
-      gale: 1
+  - .gale(GALE 3) + .dir(E>)
   - _Korok::T36
 
   - .dir(N>)
@@ -5669,8 +5602,7 @@
       coord: [-3618.43, 320.15, -1797.41]
       comment: Molli
 
-  - .gale() from stairs:
-      gale: 1
+  - .gale(GALE 1) from stairs
   - _Npc::Rito<Pink singing girl>:
       coord: [-3596.62, 317.93, -1794.98]
       comment: Notts
@@ -5737,12 +5669,10 @@
   - _Korok::T12:
       comment: Hidden under skeleton
 
-  - .gale() + .dir(N>):
-      gale: 1
+  - .gale(GALE 2) + .dir(N>)
   - _Korok::T09
 
-  - .gale() + .dir(<E):
-      gale: 1
+  - .gale(GALE 3) + .dir(<E)
   - _Korok::T04
 
   - .dir(<E)
@@ -5802,7 +5732,7 @@
             icon: korok-balloon
             color: white
           - pop
-      icon: null
+      icon-map: null
   - _Korok::R31:
       comment: Look .dir(S)
       movements:
@@ -5811,7 +5741,7 @@
             icon: korok-balloon
             color: white
           - pop
-      icon: null
+      icon-map: null
   - _Boss::Hinox::Blue:
       movements:
           - push
@@ -5819,7 +5749,7 @@
             icon: hinox-blue
             color: white
           - pop
-      icon: null
+      icon-map: null
 
   - .dir(S>)
   - _Korok::R30:
@@ -5916,8 +5846,7 @@
   - _Korok::H07:
       comment: " "
 
-  - .gale() + .dir(E):
-      gale: 1
+  - .gale(GALE 1) + .dir(E)
   - _Korok::H08:
       comment: Pinwheel
 
@@ -6023,8 +5952,7 @@
       comment: Laflat
       notes: Talk twice
 
-  - .gale() from stairs:
-      gale: 1
+  - .gale(GALE2) from stairs
   - _Korok::Z16:
       comment: In carved flower
 
@@ -6055,8 +5983,7 @@
   - _Korok::E45:
       comment: " "
 
-  - .gale() + N midair:
-      gale: 1
+  - .gale(GALE 3) + N midair
   - _Shrine::TahMuhl:
       comment: (.link([vod]https://youtu.be/9q2gebqXM2o&t=23299))
 
@@ -6156,7 +6083,7 @@
             icon: korok-magnesis
             color: white
           - pop
-      icon: null
+      icon-map: null
 
   - BLSS with orb
   - _Shrine::RitaagZumo:
@@ -6366,8 +6293,7 @@
       hide-icon-on-map: true
       notes: .link([Detailed instructions]https://docs.google.com/document/d/1-euUqUVIzwN-zqmU82j8uebHEZz8-MPRsoJw25Zf2CA/edit?usp=sharing). Here is a .link([video guide for transmutation]https://youtu.be/0YZkmVyhfy4?t=11238).
 
-  - Run out, .gale():
-      gale: 1
+  - Run out, .gale(GALE 1)
   - _Korok::D04:
       comment: On ledge
   - _Korok::D05:
@@ -6391,8 +6317,7 @@
   - .dir(E)
   - _Korok::N10
 
-  - .gale():
-      gale: 2
+  - .gale(GALE 2-3)
   - _Korok::N09
 
   - .dir(S.) + .dir(S.)
@@ -6441,8 +6366,7 @@
 
   - .dir(S) + midair
   - _Boss::Talus::Stone:
-      comment: .fury()
-      fury: 1
+      comment: .fury(FURY 1)
       coord: [2527.50, 242.00, 1904.50]
 
   - .dir(SW)
@@ -6516,8 +6440,7 @@
 
   - .dir(SE) surf
   - _Boss::Talus::Stone:
-      comment: .fury()
-      fury: 1
+      comment: .fury(FURY 2)
       coord: [3199.41, 173.38, 1904.36]
 
   - .dir(<W)
@@ -6589,8 +6512,7 @@
   - .dir(E)
   - _Korok::N53
 
-  - .gale():
-      gale: 1
+  - .gale(GALE 1)
   - _Npc::SheikaMale<Invite Bolson>:
       coord: [3331.22, 235.28, 2284.61]
 
@@ -6615,8 +6537,7 @@
       coord: [3621.69, 283.36, 2098.13]
       comment: Koyin
 
-  - .gale() + .dir(E):
-      gale: 1
+  - .gale(GALE 2) + .dir(E)
   - _Npc::SheikaMale<Lab Assistant>:
       coord: [3778.96, 356.86, 2132.45]
       comment: Symin
@@ -6627,8 +6548,7 @@
       hide-icon-on-map: true
       notes: If you sold springs last during transmutation and haven't reloaded a save since then, you'll get all the Material pics for free.
 
-  - .gale():
-      gale: 1
+  - .gale(GALE 3)
   - _Korok::N47
 
   - .dir(<E) + .dir(N>)
@@ -6895,8 +6815,7 @@
   - .dir(<<W)
   - _Korok::K12
 
-  - .gale() + .dir(S>):
-      gale: 1
+  - .gale(GALE 1) + .dir(S>)
 
   - _Boss::Hinox::Stal:
       coord: [-1273.50, 213.08, -2113.50]
@@ -6939,8 +6858,7 @@
   - .dir(S) down
   - _Korok::K14
 
-  - .gale() + BLSS:
-      gale: 1
+  - .gale(GALE 2) + BLSS
   - _Korok::K09
 
   - _Shrine::RonaKachta:
